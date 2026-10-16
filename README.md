@@ -1,5 +1,6 @@
 # Playwright QA Automation Demo (TypeScript)
 
+[![Playwright Tests](https://github.com/lrm22221-afk/playwright-qa-demo/actions/workflows/playwright.yml/badge.svg)](https://github.com/lrm22221-afk/playwright-qa-demo/actions/workflows/playwright.yml)
 ![Playwright](https://img.shields.io/badge/Playwright-1.x-2EAD33?logo=playwright)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript)
 ![ESLint](https://img.shields.io/badge/lint-ESLint%20%2B%20Prettier-4B32C3?logo=eslint)
@@ -19,7 +20,7 @@ UI tests on [SauceDemo](https://www.saucedemo.com) and REST API tests on [JSONPl
 - **Debuggability** – retries on CI, trace on first retry, screenshot + video on failure
 - **Reports** – HTML report + JUnit XML (for CI dashboards)
 - **Code quality** – strict TypeScript, ESLint (`typescript-eslint`, `eslint-plugin-playwright`), Prettier
-- **CI** – GitHub Actions workflow: lint job, then a matrix job per browser/project, report artifacts (see `ci/playwright.yml`)
+- **CI** – GitHub Actions workflow: lint job, then a matrix job per browser/project, report artifacts (see `.github/workflows/playwright.yml`)
 
 ## Architecture
 
@@ -67,7 +68,7 @@ Latest local run: **61 passed** across 6 projects (chromium, firefox, webkit, mo
 
 ## CI note
 
-The workflow lives in `ci/playwright.yml`. To enable it, copy it to `.github/workflows/playwright.yml`.
+GitHub Actions workflow: `.github/workflows/playwright.yml`.
 
 ---
 
